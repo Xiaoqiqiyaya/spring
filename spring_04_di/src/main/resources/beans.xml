@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id="address" class="com.kuang.pojo.Address"/>
+       <bean id="student"  class="com.kuang.pojo.Student">
+           <property name="name"  value="hangzhou"/>
+           <property name="address" ref="address"/>
+           <property name="books" >
+               <array>
+                   <value>红楼梦</value>
+               </array>
+           </property>
+           <property name="hobbys">
+               <list>
+                   <value>听歌</value>
+               </list>
+           </property>
+
+           <property name="card">
+               <map>
+                   <entry key="shengzheng" value="54521213125325"/>
+               </map>
+           </property>
+           <property name="games">
+               <set>
+                   <value> LoL</value>
+               </set>
+           </property>
+
+           <property name="wife">
+               <null/>
+           </property>
+           <property name="info">
+               <props>
+                   <prop key="学号">2112012023</prop>
+               </props>
+           </property>
+       </bean>
+
+</beans>
