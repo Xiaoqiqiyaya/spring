@@ -8,8 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring_04_di" />
         <module name="spring_01_ioc_1" />
-        <module name="spring_02_hello" />
         <module name="spring_03_ioc_02" />
+        <module name="spring-06-anno" />
+        <module name="spring-07-appconfig" />
+        <module name="spring_02_hello" />
+        <module name="spring-05-Autowired" />
       </profile>
     </annotationProcessing>
   </component>
